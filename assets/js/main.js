@@ -349,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const isWordPress = (typeof zoe_ajax !== 'undefined' && zoe_ajax.ajaxurl);
-      const ajaxEndpoint = isWordPress ? zoe_ajax.ajaxurl : 'https://formsubmit.co/ajax/zedon918@gmail.com';
+      const ajaxEndpoint = isWordPress ? zoe_ajax.ajaxurl : 'https://formsubmit.co/ajax/zoe.catherine.oaklandova@gmail.com';
 
       const fetchOptions = isWordPress ? {
         method: 'POST',
