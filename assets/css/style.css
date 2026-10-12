@@ -1,0 +1,126 @@
+/*
+Theme Name: Zoe Oakland - Premium Athletic Fitness
+Theme URI: https://zoeoakland.cz
+Author: Antigravity AI
+Description: Custom high-end, responsive, athletic dark-mode WordPress theme for Zoe Oakland strength & hybrid personal coaching.
+Version: 1.1.0
+Text Domain: zoe-oakland
+*/
+
+/* CSS Variables - Premium Crimson Red & Carbon Black Palette */
+:root {
+  --bg-dark: #08080a;
+  --bg-card: #121215;
+  --bg-card-hover: #1a1a1f;
+  --bg-surface: #16161a;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(255, 46, 76, 0.4);
+  
+  --accent-volt: #ff2e4c;
+  --accent-volt-hover: #d90429;
+  --accent-volt-glow: rgba(255, 46, 76, 0.25);
+  
+  --text-main: #ffffff;
+  --text-muted: #a1a1aa;
+  --text-dim: #71717a;
+  
+  --font-family-heading: 'Syne', 'Oswald', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-body: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --container-width: 1240px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-family-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--accent-volt);
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.text-volt {
+  color: var(--accent-volt);
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 46, 76, 0.1);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-full);
+  color: var(--accent-volt);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.badge-pill svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}

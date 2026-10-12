@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16161a"/>
+      <stop offset="50%" stop-color="#08080a"/>
+      <stop offset="100%" stop-color="#121215"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff2e4c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#d90429" stop-opacity="0.4"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#ff2e4c" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bottomFade" x1="0%" y1="70%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#08080a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#08080a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Layer -->
+  <rect width="600" height="700" fill="url(#heroBg)"/>
+  <rect width="600" height="700" fill="url(#spotlight)"/>
+  
+  <!-- Geometric Grid & Athletic Mesh Accent -->
+  <path d="M0,100 L600,100 M0,250 L600,250 M0,400 L600,400 M0,550 L600,550" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <path d="M150,0 L150,700 M300,0 L300,700 M450,0 L450,700" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+  <!-- Trainer Silhouette Graphic / Athletic Symbol -->
+  <g transform="translate(150, 110)">
+    <!-- Dumbbell / Hybrid Strength Symbol -->
+    <rect x="70" y="240" width="160" height="16" rx="8" fill="url(#accentGlow)"/>
+    <rect x="50" y="200" width="30" height="96" rx="6" fill="#ff2e4c"/>
+    <rect x="220" y="200" width="30" height="96" rx="6" fill="#ff2e4c"/>
+    <rect x="30" y="215" width="20" height="66" rx="4" fill="#a1a1aa"/>
+    <rect x="250" y="215" width="20" height="66" rx="4" fill="#a1a1aa"/>
+
+    <!-- Stylized Female Trainer Athlete Contour -->
+    <circle cx="150" cy="110" r="45" fill="#ffffff"/>
+    <path d="M90,200 C90,150 210,150 210,200 L230,360 C230,390 70,390 70,360 Z" fill="#ffffff" opacity="0.9"/>
+  </g>
+  
+  <!-- Bottom Soft Fade (so the floating HTML badge rests cleanly on top) -->
+  <rect y="480" width="600" height="220" fill="url(#bottomFade)"/>
+</svg>
