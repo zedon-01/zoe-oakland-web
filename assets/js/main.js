@@ -367,7 +367,9 @@ document.addEventListener('DOMContentLoaded', () => {
           service: formData.get('service'),
           time: formData.get('time'),
           goals: formData.get('goals'),
-          _subject: 'Nová poptávka tréninku - Zoe Oakland'
+          _subject: 'Nová poptávka tréninku - Zoe Oakland',
+          _captcha: 'false',
+          _template: 'table'
         })
       };
 
